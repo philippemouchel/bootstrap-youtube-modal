@@ -8,17 +8,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Youtube Modal 01</title>
+    <title>Youtube Iframe paused</title>
   </head>
-  <body>
+  <body class="youtube-iframe-paused">
     <div class="container-fluid">
+
+      <h1>Youtube Iframe paused (TO IMPROVE)</h1>
     
-      <!-- Button trigger modal -->
+      <!-- Buttons trigger modal -->
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#youtube-zelda-medley">
         Launch Zelda Orchestral Medley
       </button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#youtube-rpg-playlist">
+        Launch RPG Playlist
+      </button>
 
-      <!-- Modal -->
+      <!-- Modals -->
       <div class="modal fade" id="youtube-zelda-medley" tabindex="-1" role="dialog" aria-labelledby="youtube-zelda-medley--label" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
           <div class="modal-content">
@@ -34,6 +39,24 @@
           </div>
         </div>
       </div>
+
+
+      <div class="modal fade" id="youtube-rpg-playlist" tabindex="-1" role="dialog" aria-labelledby="youtube-rpg-playlist--label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="youtube-rpg-playlist--label">RPG Playlist - Peaceful Music</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4ceowgHn8BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

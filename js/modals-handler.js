@@ -1,6 +1,6 @@
 $(function() {
 
-    $('.modal').each(function() {
+    $('.youtube-iframe-destroyed .modal').each(function() {
       var modalIframe = $(this).find('iframe');
 
       // Keep Iframe URL in mind.
